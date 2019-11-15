@@ -56,21 +56,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
 
-            case R.id.nav_cactus_succulent:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new CactusFragment()).commit();
-                break;
-            case R.id.nav_flowering_plants:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new FlowerFragment()).commit();
-                break;
-            case R.id.nav_fruit_plants:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new FruitFragment()).commit();
+            case R.id.nav_cactus:
+                Intent i = new Intent(MainActivity.this,cactus.class);
+                startActivity(i);                break;
+            case R.id.nav_succulent:
+                Intent j = new Intent(MainActivity.this,succulents.class);
+                startActivity(j);                break;
+            case R.id.nav_bonsai:
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new BonsaiFragment()).commit();
+                Intent k = new Intent(MainActivity.this,bonsai.class);
+                startActivity(k);
                 break;
 
             case R.id.nav_location:
                 Toast.makeText(this,"Location",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_contact_us:
-                Toast.makeText(this,"Contact Us",Toast.LENGTH_SHORT).show();
+                Intent m = new Intent(MainActivity.this,contact.class);
+                startActivity(m);
                 break;
         }
         drawer.closeDrawer((GravityCompat.START));

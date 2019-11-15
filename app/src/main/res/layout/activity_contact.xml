@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contact"
+    android:background="@drawable/bg2">
+   <!-- android:background="#80CBC4">-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text="Contact Us"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="60dp"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etext1"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Name"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/text1"/>
+
+    <EditText
+        android:id="@+id/etext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Email"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/etext1"/>
+
+    <EditText
+        android:id="@+id/etext3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Phone No."
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/etext2"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Information"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:background="#000"
+        android:layout_below="@+id/etext3"/>
+
+
+
+</RelativeLayout>
